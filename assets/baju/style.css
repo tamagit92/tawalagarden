@@ -1,0 +1,746 @@
+/* warna :
+biru hijau: rgb(14, 199, 227)
+putih : rgb(250, 254, 255)
+hitam font : rgb(45, 51, 56)
+biru gelap : rgb(10, 39, 64)
+kuning : rgb(236, 255, 66)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  /* overflow: hidden; */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.hiasan1 {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.hiasan1 img {
+  width: 80px;
+}
+
+.hiasan2 {
+  /* background-color: cyan; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.hiasan2 img {
+  width: 300px;
+}
+
+/* Home section */
+.home {
+  width: 100%;
+  padding: 0px 0px 50px;
+  background-image: url(../img/bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top {
+  background-color: rgb(14, 199, 227);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  padding: 10px 100px;
+  height: 120px;
+  transition: 0.6s all;
+}
+
+.top.sticky {
+  height: 80px;
+}
+
+.top .logo {
+  /* background-color: blueviolet; */
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: rgb(10, 39, 64);
+}
+
+.top .logo .nama h4 {
+  font-size: 20px;
+}
+
+.top .logo .nama p {
+  font-size: 11px;
+}
+
+.top .logo .nama span {
+  color: rgb(236, 255, 66);
+  font-weight: 700;
+}
+
+.top .logo img {
+  /* background-color: brown; */
+  width: 75px;
+  height: 75px;
+}
+
+.top .nav {
+  /* background-color: brown; */
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+.top .nav ul {
+  /* background-color: chartreuse; */
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top .nav ul li {
+  /* background-color: cornflowerblue; */
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 30px 150px;
+  transition: 0.6s all;
+}
+
+.top .nav ul li:hover {
+  background-color: rgb(10, 39, 64);
+}
+
+.top .nav ul li a {
+  color: rgb(250, 254, 255);
+  letter-spacing: 1px;
+}
+
+.tugel {
+  position: fixed;
+  z-index: 111;
+  right: 40px;
+  top: 40px;
+  display: none;
+}
+
+.tugel .button {
+  border: none;
+  background-color: rgb(10, 39, 64);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+}
+
+.tugel .button:hover {
+  background-color: rgb(250, 254, 255);
+}
+
+.tugel .button:hover i {
+  color: rgb(10, 39, 64);
+}
+
+.tugel .button i {
+  font-size: 30px;
+  color: rgb(250, 254, 255);
+}
+
+.side {
+  background-color: rgba(236, 255, 66, 0.8);
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  z-index: 100;
+  right: -100%;
+  /* border-radius: 40% 0% 0% 60%; */
+  padding: 10px 0px;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 1s all;
+  opacity: 0;
+}
+
+.side.slide {
+  right: 0;
+  opacity: 100%;
+}
+
+.side ul {
+  /* background-color: seagreen; */
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.side ul li {
+  /* background-color: saddlebrown; */
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.side ul li a {
+  background-color: tomato;
+  width: 100%;
+}
+
+.side ul li:hover {
+  background-color: rgb(250, 254, 255);
+}
+
+.hero {
+  /* background-color: rgb(108, 231, 7); */
+  width: 100%;
+  /* height: 100%; */
+  padding: 200px 100px 0px;
+  display: flex;
+}
+
+.hero .slogan {
+  /* background-color: darkmagenta; */
+  width: 50%;
+  padding: 100px 50px;
+  color: rgb(250, 254, 255);
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero .slogan .kalimat {
+  /* background-color: darkseagreen; */
+  width: 100%;
+}
+
+.hero .slogan .kalimat h3 {
+  font-size: 30px;
+}
+
+.hero .gambar {
+  /* background-color: darkred; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero .gambar img {
+  width: 80%;
+}
+
+/* End Home section */
+
+/* About section */
+
+.about {
+  background-image: linear-gradient(
+      rgba(250, 254, 255, 0.8),
+      rgba(250, 254, 255, 0.8)
+    ),
+    url(../img/about.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  /* height: 2000px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 100px;
+}
+
+.about .gambar {
+  /* background-color: burlywood; */
+  width: 50%;
+  /* height: 500px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .gambar .frame {
+  /* background-color: chartreuse; */
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .gambar .frame img {
+  width: 90%;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.about .gambar .frame img:hover {
+  width: 99%;
+}
+
+.about .tentang {
+  /* background-color: cadetblue; */
+  width: 50%;
+  padding: 0px 20px;
+}
+
+.about .tentang .kepala {
+  /* background-color: chocolate; */
+  margin-bottom: 20px;
+}
+
+.about .tentang .kepala .judul h4 {
+  color: rgb(10, 39, 64);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.about .tentang .kepala .isi {
+  color: rgb(45, 51, 56);
+  font-size: 15px;
+  text-align: justify;
+}
+
+.about .tentang .part {
+  /* background-color: chocolate; */
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.about .tentang .part .value {
+  /* background-color: cornflowerblue; */
+  width: 48%;
+  height: 100%;
+}
+
+.about .tentang .part .value .judul {
+  /* background-color: crimson; */
+  height: 20%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about .tentang .part .value .judul i {
+  color: rgb(10, 39, 64);
+  font-size: 30px;
+}
+
+.about .tentang .part .value .deskripsi {
+  color: rgb(45, 51, 56);
+  font-size: 12px;
+  text-align: justify;
+}
+
+.about .video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: crimson; */
+  width: 500px;
+  /* height: 500px; */
+  margin-top: 30px;
+}
+
+.about .video img {
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.about .yt {
+  /* background-color: royalblue; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  /* display: none; */
+  transition: 0.05s all;
+}
+
+.about .yt .close {
+  text-align: right;
+  margin: 10px;
+  /* background-color: rgba(250, 254, 255, 0.4); */
+  border-radius: 10px;
+}
+
+.about .yt .close a {
+  display: none;
+  letter-spacing: 1px;
+  color: rgb(10, 39, 64);
+  background-color: rgba(250, 254, 255, 1);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.05s all;
+  font-weight: 700;
+}
+
+.about .yt .close a:hover {
+  color: rgba(250, 254, 255, 1);
+  background-color: rgb(10, 39, 64);
+}
+
+.about .video .sihir {
+  position: absolute;
+  left: 195px;
+  top: 205px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background-color: rgba(250, 254, 255, 0.5); */
+  background-color: transparent;
+  box-shadow: 0 0 0 10px rgba(14, 199, 227, 0.5),
+    0 0 0 20px rgba(14, 199, 227, 0.5), 0 0 0 30px rgba(14, 199, 227, 0.5),
+    0 0 0 40px rgba(14, 199, 227, 0.5), 0 0 0 50px rgba(14, 199, 227, 0.5);
+
+  animation: sihir 3s linear infinite;
+}
+
+@keyframes sihir {
+  0% {
+    box-shadow: 0 0 0 10px rgba(14, 199, 227, 0.8),
+      0 0 0 20px rgba(14, 199, 227, 0.8), 0 0 0 30px rgba(14, 199, 227, 0.8),
+      0 0 0 40px rgba(14, 199, 227, 0.8), 0 0 0 50px rgba(14, 199, 227, 0.8);
+  }
+
+  20% {
+    box-shadow: 0 0 0 10px rgba(14, 199, 227, 0.6),
+      0 0 0 20px rgba(14, 199, 227, 0.6), 0 0 0 30px rgba(14, 199, 227, 0.6),
+      0 0 0 40px rgba(14, 199, 227, 0.6), 0 0 0 50px rgba(14, 199, 227, 0.6);
+  }
+
+  40% {
+    box-shadow: 0 0 0 10px rgba(14, 199, 227, 0.4),
+      0 0 0 20px rgba(14, 199, 227, 0.4), 0 0 0 30px rgba(14, 199, 227, 0.4),
+      0 0 0 40px rgba(14, 199, 227, 0.4), 0 0 0 50px rgba(14, 199, 227, 0.4);
+  }
+
+  60% {
+    box-shadow: 0 0 0 10px rgba(14, 199, 227, 0.2),
+      0 0 0 20px rgba(14, 199, 227, 0.2), 0 0 0 30px rgba(14, 199, 227, 0.2),
+      0 0 0 40px rgba(14, 199, 227, 0.2), 0 0 0 50px rgba(14, 199, 227, 0.2);
+  }
+
+  80% {
+    box-shadow: 0 0 0 10px rgba(14, 199, 227, 0.4),
+      0 0 0 20px rgba(14, 199, 227, 0.4), 0 0 0 30px rgba(14, 199, 227, 0.4),
+      0 0 0 40px rgba(14, 199, 227, 0.4), 0 0 0 50px rgba(14, 199, 227, 0.4);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(14, 199, 227, 0.6),
+      0 0 0 20px rgba(14, 199, 227, 0.6), 0 0 0 30px rgba(14, 199, 227, 0.6),
+      0 0 0 40px rgba(14, 199, 227, 0.6), 0 0 0 50px rgba(14, 199, 227, 0.6);
+  }
+}
+
+.about .video a {
+  /* display: none; */
+  position: absolute;
+  color: rgb(250, 254, 255);
+  font-size: 50px;
+  left: 195px;
+  top: 195px;
+  transition: 0.2s all;
+}
+
+.about .video a:hover i {
+  color: red;
+}
+
+/* End About section */
+
+/* Produk section */
+
+.produk {
+  background-color: rgb(250, 254, 255);
+  width: 100%;
+  padding: 100px 100px;
+}
+
+.produk .judul {
+  /* background-color: crimson; */
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.produk .judul p {
+  color: rgb(10, 39, 64);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.produk .judul p span {
+  color: rgb(14, 199, 227);
+  border-bottom: 2px solid rgb(10, 39, 64);
+}
+
+.produk .plants {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+}
+
+.produk .plants .plant {
+  /* background-color: rgb(14, 199, 227); */
+  width: 300px;
+  height: 300px;
+  transition: 0.3s all;
+  margin: 20px 0px;
+}
+
+.produk .plants .plant:hover {
+  background-color: rgba(14, 199, 227, 0.5);
+}
+
+.produk .plants .plant .gambar {
+  /* background-color: darkgray; */
+  width: 100%;
+  height: 75%;
+}
+
+.produk .plants .plant .gambar img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+.produk .plants .plant .deskripsi {
+  width: 100%;
+  height: 25%;
+  text-align: center;
+}
+
+.produk .plants .plant .deskripsi h5 {
+  width: 100%;
+  height: 60%;
+  font-size: 20px;
+}
+
+.produk .plants .plant .deskripsi p {
+  font-size: 15px;
+}
+
+/* End Produk section */
+
+/* Contact section */
+
+.contact {
+  background-image: linear-gradient(
+      rgba(250, 254, 255, 0.8),
+      rgba(250, 254, 255, 0.8)
+    ),
+    url(../img/about.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  /* height: 1000px; */
+  padding: 100px 100px;
+}
+
+.contact .judul {
+  /* background-color: darkgreen; */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact .judul p {
+  color: rgb(10, 39, 64);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.contact .judul span {
+  color: rgb(14, 199, 227);
+  border-bottom: 2px solid rgb(10, 39, 64);
+}
+
+.contact .deskripsi {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team {
+  /* background-color: darkgreen; */
+  width: 100%;
+  /* height: 1000px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team .box {
+  background-color: rgba(250, 254, 255, 0.8);
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgb(10, 39, 64);
+  transition: 0.3s all;
+}
+
+.team .box:hover {
+  box-shadow: 5px 5px 5px rgb(236, 255, 66);
+}
+
+.team .box:hover .foto {
+  transform: rotate(20deg);
+  box-shadow: 2px 2px 2px rgb(236, 255, 66);
+}
+
+.team .box:hover .cp i {
+  color: rgb(236, 255, 66);
+}
+
+.team .box .foto {
+  /* background-color: darkorange; */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: 0.3s all;
+}
+
+.team .box .foto img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.team .box .nama {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team .box .nama h4 {
+  color: rgb(10, 39, 64);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.team .box .nama p {
+  color: rgb(45, 51, 56);
+  font-size: 15px;
+}
+
+.team .box .cp {
+  width: 100%;
+  text-align: center;
+  word-spacing: 10px;
+}
+
+.team .box .cp i {
+  color: rgb(14, 199, 227);
+  font-size: 20px;
+}
+
+/* End Contact section */
+
+/* Adress section */
+
+.adress {
+  background-color: rgb(250, 254, 255);
+  width: 100%;
+  padding: 100px 100px;
+}
+
+.adress .run {
+  background-color: rgb(14, 199, 227);
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.adress .second {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adress .second .gmap {
+  /* background-color: rgba(129, 169, 175, 0.5); */
+  width: 49%;
+  height: 400px;
+}
+
+.adress .second .alamat {
+  /* background-color: saddlebrown; */
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 0px 0px 30px;
+}
+
+.adress .second .alamat .row {
+  display: flex;
+  align-items: center;
+}
+
+.adress .second .alamat .row .map i {
+  color: rgb(14, 199, 227);
+  font-size: 60px;
+  margin-right: 20px;
+}
+
+/* End Adress section */
+
+/* Footer section */
+
+footer {
+  background-color: rgb(45, 51, 56);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(250, 254, 255);
+}
+
+/* End Footer section */

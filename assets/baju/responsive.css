@@ -1,0 +1,382 @@
+/* Ipad lanskap */
+@media screen and (max-width: 1100px) {
+  .top .nav {
+    display: none;
+  }
+
+  .tugel {
+    display: inline;
+  }
+
+  .side {
+    display: flex;
+  }
+
+  .produk .plants .plant {
+    width: 250px;
+    height: 250px;
+  }
+
+  .team .box {
+    width: 250px;
+    height: 350px;
+  }
+}
+/* Ipad */
+
+/* Ipad Potrait */
+@media screen and (max-width: 810px) {
+  .top {
+    padding: 10px 50px;
+    height: 100px;
+  }
+
+  .top .logo {
+    width: 50%;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 100px 50px 0px;
+  }
+
+  .hero .slogan {
+    width: 100%;
+    padding: 50px 50px 150px;
+  }
+
+  .hero .gambar {
+    width: 80%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+  }
+
+  .about .gambar {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .about .tentang {
+    width: 100%;
+  }
+
+  .about .video {
+    width: 400px;
+  }
+
+  .about .video .sihir {
+    left: 150px;
+    top: 185px;
+  }
+
+  .about .video a {
+    left: 150px;
+    top: 175px;
+  }
+
+  .about .video a:hover i {
+    color: red;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team .box {
+    margin: 30px 0px;
+    width: 350px;
+    height: 450px;
+  }
+
+  .adress {
+    padding: 100px 50px;
+  }
+
+  .adress .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adress .second .gmap {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .adress .second .alamat {
+    width: 80%;
+  }
+}
+/* Ipad Potrait */
+
+/* Galaxy S20 */
+@media screen and (max-width: 480px) {
+  .hiasan1 img {
+    width: 75px;
+  }
+
+  .hiasan2 img {
+    width: 200px;
+  }
+
+  .top {
+    padding: 10px 20px;
+    height: 100px;
+  }
+
+  .top .logo {
+    width: 100%;
+    justify-content: left;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 100px 20px 0px;
+  }
+
+  .hero .slogan {
+    width: 100%;
+    padding: 50px 20px 150px;
+  }
+
+  .hero .gambar {
+    width: 100%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+  }
+
+  .about .gambar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about .tentang {
+    width: 100%;
+  }
+
+  .about .tentang .part {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about .tentang .part .value {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about .video {
+    width: 400px;
+  }
+
+  .about .video a {
+    left: 150px;
+    top: 175px;
+  }
+
+  .about .video a:hover i {
+    color: red;
+  }
+
+  .produk {
+    padding: 100px 20px;
+  }
+
+  .produk .plants {
+    display: flex;
+    justify-content: center;
+  }
+
+  .produk .plants .plant {
+    width: 350px;
+    height: 350px;
+  }
+
+  .contact {
+    padding: 100px 0px;
+  }
+
+  .team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .team .box {
+    margin: 30px 0px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .adress {
+    padding: 100px 20px;
+  }
+
+  .adress .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adress .second .gmap {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .adress .second .alamat {
+    width: 100%;
+  }
+}
+/* Galaxy S20 */
+
+/* Iphone */
+@media screen and (max-width: 400px) {
+  .hiasan1 img {
+    width: 75px;
+  }
+
+  .hiasan2 img {
+    width: 200px;
+  }
+
+  .top {
+    padding: 10px 10px;
+    height: 100px;
+  }
+
+  .top .logo {
+    width: 100%;
+    justify-content: left;
+  }
+
+  .top .logo .nama h4 {
+    font-size: 18px;
+  }
+
+  .top .logo .nama p {
+    font-size: 9px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 100px 10px 0px;
+  }
+
+  .hero .slogan {
+    width: 100%;
+    padding: 50px 10px 150px;
+  }
+
+  .hero .gambar {
+    width: 100%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+  }
+
+  .about .gambar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about .tentang {
+    width: 100%;
+  }
+
+  .about .tentang .part {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about .tentang .part .value {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about .video {
+    width: 400px;
+  }
+
+  .about .video a {
+    left: 150px;
+    top: 175px;
+  }
+
+  .about .video a:hover i {
+    color: red;
+  }
+
+  .produk {
+    padding: 100px 10px;
+  }
+
+  .produk .plants {
+    display: flex;
+    justify-content: center;
+  }
+
+  .produk .plants .plant {
+    width: 350px;
+    height: 350px;
+  }
+
+  .contact {
+    padding: 100px 0px;
+  }
+
+  .team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .team .box {
+    margin: 30px 0px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .adress {
+    padding: 100px 10px;
+  }
+
+  .adress .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adress .second .gmap {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .adress .second .alamat {
+    width: 100%;
+  }
+}
+/* Iphone */
